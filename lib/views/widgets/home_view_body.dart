@@ -11,9 +11,9 @@ class HomeViewBody extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: const [
-        
+
         SizedBox(height: 80),
-        CustomAppBar(),
+        CustomAppBar(title: "Hello",sunTitle: "You have 4 tasks today",),
         SizedBox(height: 40),
         Expanded(child: HomeTaskListView()),
         HomeRow(),
