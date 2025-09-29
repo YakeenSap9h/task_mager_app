@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class Task extends StatelessWidget {
   const Task({super.key});
 
@@ -10,7 +9,7 @@ class Task extends StatelessWidget {
       margin: EdgeInsets.symmetric(vertical: 10, horizontal: 12),
       width: double.infinity,
       decoration: BoxDecoration(
-        border: BoxBorder.all(),
+        border: BoxBorder.all(color: Colors.grey),
         borderRadius: BorderRadius.all(Radius.circular(8)),
       ),
       child: ListTile(
