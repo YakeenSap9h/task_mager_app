@@ -5,21 +5,22 @@ class ColumnOfIconAndText extends StatelessWidget {
     super.key,
     required this.icon,
     required this.text,
+    required this.onPressed,
   });
 
   final IconData icon;
   final String text;
+  final void Function()? onPressed;
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 6.0, horizontal: 24),
+      padding: const EdgeInsets.symmetric(vertical: 17.0, horizontal: 24),
 
       child: Column(
         children: [
-          IconButton(
-            onPressed: () {},
-            color: Colors.grey,
-            icon: Icon(icon, size: 32),
+          GestureDetector(
+            onTap: onPressed,
+            child: Icon(icon, color: Colors.grey, size: 32),
           ),
           Text(text, style: TextStyle(color: Colors.grey)),
         ],

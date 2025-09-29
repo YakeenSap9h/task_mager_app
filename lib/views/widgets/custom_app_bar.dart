@@ -9,12 +9,12 @@ class CustomAppBar extends StatelessWidget {
       padding: const EdgeInsets.only(top: 22, left: 12),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
+        children:const [
           Text(
             "Hello ",
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 50),
           ),
-          const SizedBox(height: 1),
+           SizedBox(height: 1),
           Text("You have 4 task today", style: TextStyle(fontSize: 18)),
         ],
       ),
